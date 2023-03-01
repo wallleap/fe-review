@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本相关样式</title>
+  <style>
+    p {
+      color: #888;
+      font-size: 18px;
+      font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      text-align: justify;
+      line-height: 26px;
+      text-indent: 2em;
+    }
+    section p {
+      color: rgba(12, 75, 202, 0.8);
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      line-height: 1.5;
+    }
+    h2 {
+      font-size: 8vw;
+      text-decoration: underline;
+    }
+    h2.section {
+      text-decoration: none;
+    }
+    .el-1 {
+      width: 30em;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .el-2 {
+      width: 30em;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  </style>
+</head>
+<body>
+  <h2>文本</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque labore tenetur inventore tempore dolore ea qui? Doloribus pariatur ipsa earum, tempore veniam non quis quod explicabo perferendis iure? Omnis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sunt?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sunt?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sunt?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sunt?</p>
+  <section>
+    <h2 class="section">Section</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </section>
+  <div class="el-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aperiam quo optio architecto quidem incidunt commodi? Sed nemo totam vero fugit, alias praesentium sint eveniet odit quasi id labore esse!</div>
+  <div class="el-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aperiam quo optio architecto quidem incidunt commodi? Sed nemo totam vero fugit, alias praesentium sint eveniet odit quasi id labore esse!</div>
+</body>
+</html>
