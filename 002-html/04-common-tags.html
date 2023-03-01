@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>常用标签</title>
+</head>
+<body>
+  <h2>按钮 button</h2>
+  <button>确定</button>
+  <button disabled>禁用</button>
+  <button type="button">默认按钮</button>
+  <button type="submit">提交按钮</button>
+  <button type="reset">重置按钮</button>
+  <h2>span、i、strong、em</h2>
+  <p><strong>强调</strong>的文字</p>
+  <p><span>包裹</span>方便设置样式</p>
+  <p><em>次级强调</em>的文字</p>
+  <p><i>倾斜</i>通常用作字体图标的标签</p>
+  <h2>figure、img、figcaption</h2>
+  <figure>
+    <img src="./img/image.svg" alt="图片">
+    <figcaption>picture</figcaption>
+  </figure>
+  <h2>table 表格</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Items</th>
+        <th>Expenditure</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Donats</td>
+        <td>3000</td>
+      </tr>
+      <tr>
+        <td>Stationery</td>
+        <td>18000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Totals</td>
+        <td>21000</td>
+      </tr>
+    </tfoot>
+  </table>
+  <h2>video 视频</h2>
+  <video control>
+    <source src="https://player.vimeo.com/progressive_redirect/playback/795362537/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=3d4a3daee38b77e0c18bf92ab7276492968ad316388aa4bd45d1f8941414a524">
+  </video>
+  <h2>audio 音频</h2>
+  <figure>
+    <figcaption>听这首音乐吧</figcaption>
+    <audio src="https://96.f.1ting.com/local_to_cube_202004121813/96kmp3/2022/11/07/07a_lcc/01.mp3" controls></audio>
+  </figure>
+  <h2>表单</h2>
+  <form action="xxx.php" method="post">
+    <label>
+      姓名：<input type="text" name="username" id="uname" value="tom">
+    </label>
+    <label for="pwd">密码：</label>
+    <input type="password" name="password" id="pwd">
+    <h3>爱好（多选）</h3>
+    <label><input type="checkbox" name="hobby" value="music">音乐</label>
+    <label><input type="checkbox" name="hobby" value="sport">运动</label>
+    <h3>性别（单选）</h3>
+    <label><input type="radio" name="sex" value="female">女</label>
+    <label><input type="radio" name="sex" value="male">男</label>
+    <textarea name="intro" cols="30" rows="10" placeholder="个人介绍"></textarea>
+    <select name="city" title="城市">
+      <option value="beijing">北京</option>
+      <option value="shanghai" selected >上海</option>
+      <option value="hangzhou" >杭州</option>
+    </select>
+    <input type="email" placeholder="email">
+    <input type="file" title="选择文件">
+    <input type="date" title="选择日期">
+    <input type="time" title="选择时间">
+    <input type="time" disabled title="选择时间">
+    <input type="range" title="范围">
+    <input type="tel" placeholder="输入手机号">
+    <input type="color" name="color" title="颜色">
+    <input type="submit" value="提交">
+  </form>
+
+</body>
+</html>
